@@ -42,9 +42,20 @@ public class HelloWorld {
 //        int y = 4;
 //        System.out.println(x * y);
 
+//          int x = 10;
+//          int y = 2;
+//        System.out.println(x / y);
+//        System.out.println(y - x);
+
           int x = 10;
           int y = 2;
-        System.out.println(x / y);
-        System.out.println(y - x);
+//        x = x / y;
+//        y = y - x;
+          y -= (x /= y);
+        System.out.println(y);
+        System.out.println(x);
+
+        int maximunInteger = Integer.MAX_VALUE;
+        System.out.println(maximunInteger);
     }
 }
