@@ -1,12 +1,24 @@
 public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Hello World");
+
         int myFavoriteNumber = 17;
         System.out.println(myFavoriteNumber);
-        String myString = "string value";
+
+//        String myString = "string value";
+//        System.out.println(myString);
+
+        char newString = 'a';
+        System.out.println(newString);
+
+        double myString = 3.124159F;
         System.out.println(myString);
+
 //        long myNumber = 123;
-        float myNumber = (float) 3.14;
+//        System.out.println(myNumber);
+
+        double myNumber = (float) 3.14;
+        System.out.println(myNumber);
 
 //        int x = 5;
 //        System.out.println(x++);
@@ -19,6 +31,7 @@ public class HelloWorld {
 //        String theNumberThree = "three";
 //        Object o = theNumberThree;
 //        int three = (int) o;
+
 //        int three = (int) "three";
 
 //        int x = 4;
