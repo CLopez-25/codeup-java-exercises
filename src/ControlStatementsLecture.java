@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlStatementsLecture {
     public static void main(String[] args) {
 //        Statements
@@ -9,7 +11,40 @@ public class ControlStatementsLecture {
             System.out.println("x is between 5 and 15");
         }
 
+//        String customerChoice;
 
+        Scanner scanner = new Scanner(System.in);
+//        System.out.println("What flavor do you want?");
+//        customerChoice = scanner.next().toLowerCase();
+        // enhanced switch statement
+//        switch (customerChoice) {
+//            case "vanilla" -> System.out.println("One vanilla coming right up");
+//            case "chocolate" -> System.out.println("chocolate coming right up");
+//            case "strawberry" -> System.out.println("strawberry coming right up");
+//            default -> System.out.println("We don't have that");
+//        }
 
+        int c = 0, d = 100, e = 50;
+        if (c == 1 && e++ < 100){
+
+        }
+        System.out.println("e = " + e);
+
+        boolean existence = true;
+        int theAnswer = 42;
+//        if (existence) System.out.println("yes");
+//        if (existence || theAnswer++ == 42){
+//
+//        }
+//        System.out.println(theAnswer);
+        if (theAnswer++==42){
+            System.out.println("the answer is 42");
+        } else {
+            System.out.println("the answer is not 42");
+        }
+
+        int z = 2;
+        int a = 3;
+        if (a == 3 | z==2) System.out.println("This is not going to happen");
     }
 }
