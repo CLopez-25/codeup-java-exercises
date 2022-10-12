@@ -9,21 +9,27 @@ public class ConsoleExercises {
 //        int userInt = scanner.nextInt();
 //        System.out.println("Enter 3 words:");
 //        String userWord = scanner.next();
-//        System.out.printf("Your word was %s.%n", userWord);
 //        String userWordTwo = scanner.next();
-//        System.out.printf("Your word was %s.%n", userWordTwo);
 //        String userWordThree = scanner.next();
-//        System.out.printf("Your word was %s.%n", userWordThree);
+//        System.out.printf("%s%n%s%n%s%n", userWord, userWordTwo, userWordThree);
 //        System.out.println("Enter a sentence:");
 //        scanner.nextLine();
 //        String userSentence = scanner.nextLine();
 //        System.out.printf("Your sentence was %s.%n", userSentence);
 //        scanner.nextLine();
-        System.out.println("Enter the length and width of your classroom:");
+//        System.out.println("Enter the length and width of your classroom:");
 
-        int length = scanner.nextInt();
-        int width = scanner.nextInt();
-        int area = length*width;
-        System.out.printf("The area of your room is %d", area);
+//        int length = scanner.nextInt();
+//        int width = scanner.nextInt();
+//        int area = length*width;
+//        System.out.printf("The area of your room is %d", area);
+        System.out.println("Enter the length of your classroom:");
+        int length = Integer.parseInt(scanner.nextLine());
+        System.out.println("Enter the width of your classroom");
+        int width = Integer.parseInt(scanner.nextLine());
+//        int perimeter = Integer.parseInt(length) * 2 + Integer.parseInt(width) * 2;
+        int perimeter = width * 2 + length * 2;
+        System.out.printf("The perimeter of your classroom is %d%n", perimeter);
+
     }
 }
