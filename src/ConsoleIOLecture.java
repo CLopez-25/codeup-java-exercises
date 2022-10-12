@@ -25,7 +25,7 @@ public class ConsoleIOLecture {
         String userInput = scanner.nextLine();
         System.out.printf("Your sentence was %s.%n", userInput);
         System.out.println("Enter another sentence:");
-        String seconSentence = scanner.nextLine();
-        System.out.printf("Your second sentence was %s.%n", seconSentence);
+        String secondSentence = scanner.nextLine();
+        System.out.printf("Your second sentence was %s.%n", secondSentence);
     }
 }
