@@ -22,23 +22,24 @@ public class ControlFlowExercises {
 //            i -= 5;
 //        } while (i >= -10);
 
-//        int i = 5;
-//        String userString = "";
-//        for (i = 5; i <= 15; i++){
-//            userString += i + " ";
-//            System.out.println(i);
-//        }
+//         long i = 2;
+//         do {
+//             System.out.println(i);
+//             i *= i;
+//         } while (i < 1000000);
 
-//        int i = 0;
-//        for (i = 2; i <= 100; i++){
-//            if (i % 2 == 0){
-//                System.out.println(i*i);
-//            }
-//        }
+
+//         for (i = 5; i < 15; i++){
+//             System.out.println(i);
+//         }
+
+//         for ( long i = 2; i <= 1000000; i*=i){
+//             System.out.println(i);
+//         }
+
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("What number would you like to go up to?");
-
 
     }
 }
