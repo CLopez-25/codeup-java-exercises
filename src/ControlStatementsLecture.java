@@ -47,8 +47,8 @@ public class ControlStatementsLecture {
 //        int a = 3;
 //        if (a == 3 | z==2) System.out.println("This is not going to happen");
 
-        // while loop:
-//        int i = 1;
+//         while loop:
+        int i = 1;
 //        System.out.println("The loop hasnt started yet. The value of i is " + i);
 //        while (i < 10){
 //            System.out.println("Now im in the loop. i has not incremented yet and its vslue is " + i);
@@ -57,9 +57,17 @@ public class ControlStatementsLecture {
 //        }
 //        System.out.println("The loop has ended because the conditional has tested false. the value of i is " + i);
 
+        // do while loop:
+        do {
+            System.out.println("Now I'm in the loop. i has not incremented yet and its value is " + i);
+            i++;
+            System.out.println("I'm still in the loop. i has incremented and its value is " + i);
+        } while (i < 10);
+        System.out.println("The loop has ended because the conditional has tested false.  The value of i is " + i);
+
         // for loop:
-          for (int i = 0; i < 10; i++){
-              System.out.println(i);
-          }
+//          for (int i = 0; i < 10; i++){
+//              System.out.println(i);
+//          }
     }
 }
