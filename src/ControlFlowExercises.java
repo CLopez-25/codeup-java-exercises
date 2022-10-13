@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
     public static void main(String[] args) {
 //        int i = 5;
@@ -23,12 +25,16 @@ public class ControlFlowExercises {
 //            System.out.println(i);
 //        }
 
-        int i = 0;
-        for (i = 2; i < 100; i++){
-            if (i % 2 == 0){
-                System.out.println(i*i);
-            }
-        }
+//        int i = 0;
+//        for (i = 2; i <= 100; i++){
+//            if (i % 2 == 0){
+//                System.out.println(i*i);
+//            }
+//        }
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("What number would you like to go up to?");
+
 
     }
 }

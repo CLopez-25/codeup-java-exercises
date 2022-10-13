@@ -51,7 +51,7 @@ public class ControlStatementsLecture {
         int i = 1;
 //        System.out.println("The loop hasnt started yet. The value of i is " + i);
 //        while (i < 10){
-//            System.out.println("Now im in the loop. i has not incremented yet and its vslue is " + i);
+//            System.out.println("Now im in the loop. i has not incremented yet and its value is " + i);
 //            i++;
 //            System.out.println("I'm still in the loop. i has incremented and its value is " + i);
 //        }
