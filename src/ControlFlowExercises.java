@@ -46,32 +46,32 @@ public class ControlFlowExercises {
 //         }
 
         // Fizz Buzz
-        for (int i = 1; i <= 100; i++){
-            if (i % 3 == 0 && i % 5 == 0){
-                System.out.println("Fizz Buzz");
-            } else if (i % 3 == 0){
-                System.out.println("Fizz");
-            } else if (i % 5 == 0){
-                System.out.println("Buzz");
-            } else {
-                System.out.println(i);
-            }
-        }
-
+//        for (int i = 1; i <= 100; i++){
+//            if (i % 3 == 0 && i % 5 == 0){
+//                System.out.println("Fizz Buzz");
+//            } else if (i % 3 == 0){
+//                System.out.println("Fizz");
+//            } else if (i % 5 == 0){
+//                System.out.println("Buzz");
+//            } else {
+//                System.out.println(i);
+//            }
+//        }
+//
         Scanner scanner = new Scanner(System.in);
-        System.out.println("What number would you like to go up to?");
-        boolean userWantsToContinue = false;
-        do {
-            int userInput = scanner.nextInt();
-            System.out.println("Here is your table!");
-            scanner.nextLine();
-            System.out.println("number | squared | cubed");
-            System.out.println("------ | ------- | -----");
-            for (int i = 1; i <= userInput; i++){
-//              left justified spaces in line below
-                System.out.printf("%-7d| %-8d| %-5d%n", i, i * i, i * i * i);
-            }
-        } while (userWantsToContinue);
+//        System.out.println("What number would you like to go up to?");
+//        boolean userWantsToContinue = false;
+//        do {
+//            int userInput = scanner.nextInt();
+//            System.out.println("Here is your table!");
+//            scanner.nextLine();
+//            System.out.println("number | squared | cubed");
+//            System.out.println("------ | ------- | -----");
+//            for (int i = 1; i <= userInput; i++){
+////              left justified spaces in line below
+//                System.out.printf("%-7d| %-8d| %-5d%n", i, i * i, i * i * i);
+//            }
+//        } while (userWantsToContinue);
 
         String userChoice = "yes";
         while (!userChoice.equals("no")) {
