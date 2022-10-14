@@ -2,24 +2,34 @@ import java.util.Scanner;
 
 public class StringsLecture {
     public static void main(String[] args) {
-        String teacher = "teacher";
-        System.out.println(teacher);
-        teacher = "not teacher";
         String javier = "javier";
-        String anotherJavier = "javier";
+        System.out.println(Integer.toHexString((System.identityHashCode(javier))));
+
+        String alsoJavier = "javier";
+        System.out.println(Integer.toHexString((System.identityHashCode(alsoJavier))));
+
+        javier = javier + "ruedas";
+        alsoJavier = javier;
 
 
-
-        System.out.println(teacher);
+        System.out.println(alsoJavier);
         System.out.println(javier);
-        System.out.println(javier.hashCode());
-        System.out.println(anotherJavier.hashCode());
-        System.out.println(javier == anotherJavier);
+        System.out.println(Integer.toHexString(System.identityHashCode(javier)));
+        System.out.println(Integer.toHexString((System.identityHashCode(alsoJavier))));
+
+        String letsTryThis = "javier";
+        System.out.println(Integer.toHexString((System.identityHashCode(letsTryThis))));
+
+        String theOriginalJavier = "javier";
+        System.out.println(letsTryThis == theOriginalJavier);
+
         Scanner scanner = new Scanner(System.in);
+        System.out.println("whats your name?");
+        String userName = scanner.next();
+        System.out.println(theOriginalJavier == userName);
+        System.out.println(theOriginalJavier.equals(userName));
 
-        String userInput = scanner.next();
-        System.out.println(javier.equals(userInput));
-    }
-}
+    } // main end
+} // class end
 
-// the original string will stay untouched, you are actually creating a new string
+// the original string will stay stored in the systems memory, you are actually creating a new string it'll just reference to the original string and it'll evaluate to true
