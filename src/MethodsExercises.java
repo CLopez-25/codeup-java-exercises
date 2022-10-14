@@ -35,6 +35,15 @@ public class MethodsExercises {
             return userInput;
         }
     }
+
+    public static int factorial(int x){
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.printf("Enter a number from %d and %d: %n");
+        int userInput = scanner.nextInt();
+
+    }
+
     public static void main(String[] args) {
         getInteger(1, 10);
     }
