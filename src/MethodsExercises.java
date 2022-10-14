@@ -16,7 +16,11 @@ public class MethodsExercises {
     }
 
     public static void division(int x, int y){
-        System.out.println(x / y);
+        System.out.println( x / y);
+    }
+
+    public static void modulus(){
+
     }
 
 }
