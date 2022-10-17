@@ -7,9 +7,13 @@ public class FighterTest {
         fighter1.maxDamage = 14;
         fighter1.printStats();
         fighter1.battleRoar();
+        int fighter1attackRoll = fighter1.attackRoll();
+        System.out.printf("%s attacks and rolls %d%n", fighter1.name, fighter1attackRoll);
 
         Fighter fighter2 = new Fighter();
         fighter2.name = "Sozalix";
         fighter2.battleRoar();
     }
 }
+
+// a static method can be called on that class itself not an instance
