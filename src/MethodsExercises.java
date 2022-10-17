@@ -85,4 +85,4 @@ public class MethodsExercises {
 //        getFactorial();
         diceRoll();
     }
-}
+} // class end
