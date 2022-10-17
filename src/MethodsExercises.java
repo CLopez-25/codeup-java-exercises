@@ -36,25 +36,25 @@ public class MethodsExercises {
 //        }
 //    }
 
-    public static int getFactorial() {
-        int x, y, fact = 1;
-
-        System.out.printf("Give me a number between %d and %d\n", 1, 10);
-        Scanner scanner = new Scanner(System.in);
-
-        x = scanner.nextInt();
-
-        if (x < 0) {
-            System.out.println("Number should be non-negative.");
-            return x;
-        } else {
-            for (y = 1; y <= x; y++)
-                fact = fact * y;
-
-            System.out.println("Factorial of " + x + " is = " + fact);
-            return x;
-        }
-    }
+//    public static int getFactorial() {
+//        int x, y, fact = 1;
+//
+//        System.out.printf("Give me a number between %d and %d\n", 1, 10);
+//        Scanner scanner = new Scanner(System.in);
+//
+//        x = scanner.nextInt();
+//
+//        if (x < 0) {
+//            System.out.println("Number should be non-negative.");
+//            return x;
+//        } else {
+//            for (y = 1; y <= x; y++)
+//                fact = fact * y;
+//
+//            System.out.println("Factorial of " + x + " is = " + fact);
+//            return x;
+//        }
+//    }
 
     public static int generateRandomNumber(int max){
         return (int) Math.round(Math.random() * max);
