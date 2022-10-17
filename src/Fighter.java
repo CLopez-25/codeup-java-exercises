@@ -13,4 +13,15 @@ public class Fighter {
     public int attackRoll(){
         return D20.rolld20();
     }
+
+    public Fighter(){
+
+    }
+
+    public Fighter(String name, int hitPoints, int maxDamage){
+        System.out.println("A new fighter has emerged!");
+        this.name = name;
+        this.hitPoints = hitPoints;
+        this.maxDamage = maxDamage;
+    }
 }

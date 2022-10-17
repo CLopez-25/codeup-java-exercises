@@ -1,6 +1,7 @@
 public class EmployeeTest {
     public static void main(String[] args) {
-        Employee employee1 = new Employee();
+        // reference variables: objects:
+        Employee employee1 = new Employee(); // this is an instance of the class
         Employee employee2 = new Employee();
         Employee employee3 = new Employee();
         employee1.name = "Pablo";

@@ -13,6 +13,9 @@ public class FighterTest {
         Fighter fighter2 = new Fighter();
         fighter2.name = "Sozalix";
         fighter2.battleRoar();
+
+        Fighter fighter3 = new Fighter("mason", 1, 500);
+        fighter3.printStats();
     }
 }
 
