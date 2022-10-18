@@ -34,5 +34,12 @@ public class Person {
 //        Person person3 = person2;
 //        System.out.println(person2 == person3);
 
+        Person person2 = new Person("John");
+        Person person3 = person2;
+        System.out.println(person2.getName());
+        System.out.println(person3.getName());
+        person3.setName("Jane");
+        System.out.println(person2.getName());
+        System.out.println(person3.getName());
     }
 }
