@@ -1,5 +1,6 @@
+package com.codeup.java;
 public class Quote {
-    public static String RandomQuote(){
+    public static String randomQuote(){
         int randomNumber = (int) (Math.random() * 4) + 1;
         return switch (randomNumber) {
             case 1 -> "Time is money";
