@@ -38,3 +38,4 @@ public class Notes {
 //        short meduimNumber; // shorts go from -32768 to 32767
 //        int number; // integers go c. -2 billion to 2 billion
 //        long bigNumber; // longs go about -9 quadrillion to 9 quadrillion
+

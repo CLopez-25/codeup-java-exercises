@@ -1,3 +1,7 @@
+package RPG;
+
+import RPG.D20;
+
 public class Fighter {
     public String name;
     public int hitPoints;

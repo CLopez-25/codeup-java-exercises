@@ -1,3 +1,5 @@
+package animals;
+
 public class Horse {
     public String name;
     public String sound;
