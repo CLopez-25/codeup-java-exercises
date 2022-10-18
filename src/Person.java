@@ -25,5 +25,14 @@ public class Person {
         Person person1 = new Person("Cesar");
         System.out.println(person1.getName());
         person1.sayHello();
+
+//        Person person2 = new Person("John");
+//        Person person3 = new Person("John");
+//        System.out.println(person2.getName().equals(person3.getName()));
+//        System.out.println(person2 == person3);
+//        Person person2 = new Person("John");
+//        Person person3 = person2;
+//        System.out.println(person2 == person3);
+
     }
 }
