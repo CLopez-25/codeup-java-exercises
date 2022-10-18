@@ -2,6 +2,8 @@ package com.codeup.java.util;
 import java.util.Scanner;
 
 public class Input {
+    private Scanner scanner;
+
     public Scanner getScanner() {
         return scanner;
     }
@@ -10,7 +12,13 @@ public class Input {
         this.scanner = scanner;
     }
 
-    private Scanner scanner;
+    public String getString(){
+        System.out.println("Enter your input:");
+        return scanner.nextLine();
+    }
+
+
+
 
     public Input(){
         scanner = new Scanner(System.in);
