@@ -52,13 +52,13 @@ public class Input {
 
     public double getDouble(double min, double max){
         System.out.printf("Enter a number between %d and %d\n", min, max);
-        double userNumber = scanner.nextDouble();
-        if ((userNumber > max) && (userNumber < min)) {
+        double userNumber = this.scanner.nextDouble();
+        if ((userNumber > max) || (userNumber < min)) {
             System.out.println("Try again!");
             return getDouble(min, max);
         } else {
             System.out.printf("Your number was %d!%n", userNumber);
-            return scanner.nextDouble();
+            return userNumber;
         }
     }
 
