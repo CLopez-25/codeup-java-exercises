@@ -1,5 +1,4 @@
 package com.codeup.java;
-
 import java.util.Arrays;
 
 public class ArraysExercises {
@@ -13,8 +12,8 @@ public class ArraysExercises {
 
 
     public static void main(String[] args) {
-//        int[] numbers = {1, 2, 3, 4, 5};
-//        System.out.println(numbers);
+        int[] numbers = {1, 2, 3, 4, 5};
+        System.out.println(Arrays.toString(numbers));
 
 
         Person[] people = new Person[3];
@@ -27,10 +26,12 @@ public class ArraysExercises {
 
         System.out.println("__________");
 
-        Person Paloma = new Person("Paloma");
-        people = addPerson(people, Paloma);
+        Person newPerson = new Person("Paloma");
+        people = addPerson(people, newPerson);
         for (Person person : people){
             System.out.println(person.getName());
         }
+
+        System.out.println(Arrays.toString(people));
     }
 }
