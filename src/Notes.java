@@ -1,3 +1,5 @@
+package com.codeup.java;
+
 public class Notes {
 }
 // public class means we access this class from anywhere in our project
@@ -38,4 +40,6 @@ public class Notes {
 //        short meduimNumber; // shorts go from -32768 to 32767
 //        int number; // integers go c. -2 billion to 2 billion
 //        long bigNumber; // longs go about -9 quadrillion to 9 quadrillion
+
+// if you create a method in your class you can have it return whatever you want instead of the hash code reference (i.e. monster/monstertest)
 
