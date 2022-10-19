@@ -23,6 +23,11 @@ public class Input {
         return userChoice.equalsIgnoreCase("y") || userChoice.trim().equalsIgnoreCase("yes");
     }
 
+    public int getInt(){
+        System.out.println("Enter a number:");
+        return scanner.nextInt();
+    }
+
     public int getInt(int min, int max){
         System.out.printf("Enter a number between %d and %d\n", min, max);
         int userNumber = scanner.nextInt();
@@ -35,20 +40,22 @@ public class Input {
         }
     }
 
-    public int getInt(){
-        return this.scanner.nextInt();
+    public double getDouble(){
+        System.out.println("Enter a number:");
+        return scanner.nextDouble();
     }
 
-//    public double getDouble(double min, double max) {
-//        double userNumber = scanner.nextInt();
-//        if ((userNumber > max) && (userNumber < min)) {
-//            System.out.println("Try again!");
-//            return getInt(double min, double max);
-//        } else {
-//            System.out.printf("Your number was %f!%n", userNumber);
-//            return scanner.nextDouble();
-//        }
-//    }
+    public double getDouble(double min, double max){
+        System.out.printf("Enter a number between %d and %d\n", min, max);
+        double userNumber = scanner.nextDouble();
+        if ((userNumber > max) && (userNumber < min)) {
+            System.out.println("Try again!");
+            return getDouble(min, max);
+        } else {
+            System.out.printf("Your number was %d!%n", userNumber);
+            return scanner.nextDouble();
+        }
+    }
 
 
 
