@@ -13,6 +13,15 @@ public class MoviesApplication {
             }
         }
     }
+    public static Movie[] addMovie(Movie newMovie, Movie[] movies){
+        Movie[] newMovieArray;
+        newMovieArray = new Movie[movies.length + 1];
+        for (int i =0; i < movies.length; i++){
+            newMovieArray[i] = movies[i];
+        }
+        newMovieArray[newMovieArray.length - 1] = newMovie;
+        return newMovieArray;
+    }
 
     public static void main(String[] args) {
         Input input = new Input();
@@ -55,6 +64,10 @@ public class MoviesApplication {
                     getAllMoviesFromCategory("SciFi", movies);
                     break;
                 case "6":
+                    String title = input.getString("Enter the movie name:");
+                    String category = input.getString("Enter the category of the movie:");
+                    Movie newMovie = new Movie(title, category);
+                    movies = addMovie(newMovie, movies);
                     break;
                 default:
                     System.out.println("FOLLOW DIRECTIONS!");

@@ -22,29 +22,36 @@ public class Input {
         return scanner.nextLine();
     }
 
+    // Solution: David Lara and John Pedrotti
     public boolean yesNo(){
-        System.out.println("Yes or No?");
-        String userChoice = this.scanner.nextLine();
-        return userChoice.equalsIgnoreCase("y") || userChoice.trim().equalsIgnoreCase("yes");
+        System.out.println("Yes or no?");
+        String userInput = scanner.nextLine();
+        return userInput.equalsIgnoreCase("y") || userInput.equalsIgnoreCase("yes");
     }
 
     public int getInt(){
-        System.out.println("Enter a number:");
+        System.out.println("Enter an integer:");
+        return scanner.nextInt();
+    }
+
+    public int getInt(String prompt){
+        System.out.println(prompt);
         return scanner.nextInt();
     }
 
     public int getInt(int min, int max){
-        System.out.printf("Enter a number between %s and %s:%n", min, max);
-        int userNumber = scanner.nextInt();
-        if (userNumber >= min && userNumber <= max){
-            return userNumber;
-        } else {
-            return getInt(min,max);
+        String prompt = "Enter an integer between " + min + " and " + max + ":";
+        System.out.println(prompt);
+        int userInput = scanner.nextInt();
+        while (userInput < min || userInput > max){
+            System.out.println(prompt);
+            userInput = scanner.nextInt();
         }
+        return userInput;
     }
 
     public double getDouble(){
-        System.out.println("Enter a number:");
+        System.out.println("Enter an number:");
         return scanner.nextDouble();
     }
 
@@ -54,22 +61,17 @@ public class Input {
     }
 
     public double getDouble(double min, double max){
-        System.out.printf("Enter a number between %d and %d:%n", min, max);
-        double userNumber = this.scanner.nextDouble();
-        if ((userNumber > max) || (userNumber < min)) {
-            System.out.println("Try again!");
-            return getDouble(min, max);
-        } else {
-            System.out.printf("Your number was %d!%n", userNumber);
-            return userNumber;
+        String prompt = "Enter an number between " + min + " and " + max + ":";
+        System.out.println(prompt);
+        double userInput = scanner.nextDouble();
+        while (userInput < min || userInput > max){
+            System.out.println(prompt);
+            userInput = scanner.nextDouble();
         }
+        return userInput;
     }
-
-
 
     public Input(){
         scanner = new Scanner(System.in);
     }
-
-
 }
