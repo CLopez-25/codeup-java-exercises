@@ -7,6 +7,14 @@ public class BirdTest {
 //        System.out.print(crow.getName() + " goes ");
 //        crow.makeNoise();
         TweetyBird goldfinch = new TweetyBird();
-        goldfinch.makeNoise();
+//        goldfinch.makeNoise();
+        Parrot parrot = new Parrot();
+        parrot.echo("yeehaw");
+//        parrot.makeNoise();
+        Bird parrot2 = new Parrot();
+        parrot2.makeNoise();
+
+        parrot2.setName("Parrot");
+        System.out.println(parrot2.getName());
     }
 }

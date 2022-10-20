@@ -1,7 +1,7 @@
 package com.codeup.java.vehicle;
 
 public class Vehicle {
-    public String setName;
+
     private String name;
 
     public String getName() {
@@ -12,7 +12,9 @@ public class Vehicle {
         this.name = name;
     }
 
-    public void makeNoise(){
-        System.out.println("vroom vroom");
+    public String makeNoise(){
+        return "vroom vroom";
     }
+
+
 }

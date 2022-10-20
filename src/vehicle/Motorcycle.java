@@ -1,7 +1,12 @@
 package com.codeup.java.vehicle;
 
 public class Motorcycle extends Vehicle {
-    public void makeNoise(){
-        System.out.println("Zoom");
+    public String makeNoise(){
+        return "Zoom";
+    }
+
+    public void breakDown(){
+        System.out.println(super.makeNoise());
+        System.out.println("krrcckkklunnnnk");
     }
 }
