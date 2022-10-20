@@ -17,6 +17,11 @@ public class Input {
         return scanner.nextLine();
     }
 
+    public String getString(String prompt){
+        System.out.println(prompt);
+        return scanner.nextLine();
+    }
+
     public boolean yesNo(){
         System.out.println("Yes or No?");
         String userChoice = this.scanner.nextLine();
@@ -65,4 +70,6 @@ public class Input {
     public Input(){
         scanner = new Scanner(System.in);
     }
+
+
 }
