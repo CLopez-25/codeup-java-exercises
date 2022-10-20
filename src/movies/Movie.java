@@ -1,29 +1,23 @@
 package com.codeup.java.movies;
 
 public class Movie {
-    private String movieName;
+    private String name;
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
     private String category;
-
-    public Movie(String movieName, String category){
-        this.movieName = movieName;
-        this.category = category;
-    }
-
-    public String getMovieName(){
-        return movieName;
-    }
-
-    public void setMovieName(String movieName){
-        this.movieName = movieName;
-    }
-
-    public String getCategory(){
+    public String getCategory() {
         return category;
     }
-
-
-    public void setCategory(String category){
+    public void setCategory(String category) {
         this.category = category;
     }
 
+    public Movie(String name, String category) {
+        this.name = name;
+        this.category = category;
+    }
 }
