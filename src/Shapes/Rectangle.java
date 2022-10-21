@@ -1,8 +1,8 @@
 package com.codeup.java.Shapes;
 
 public class Rectangle {
-    private int width;
-    private int length;
+    protected int width;
+    protected int length;
 
     public int getWidth() {
         return width;
