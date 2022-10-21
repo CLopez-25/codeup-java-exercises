@@ -1,6 +1,9 @@
 package com.codeup.java.animals;
 
-public class Parrot extends Bird{
+public class Parrot extends Bird implements Pet{
+
+    public final static String order = "Psittaciformes";
+
 
     public void setName(String parrotName){
         super.name = parrotName;
@@ -13,6 +16,10 @@ public class Parrot extends Bird{
 
     public void echo(String input){
         System.out.println(input);
+    }
+
+    public void beCute(){
+        System.out.println(" Human goes awwww");
     }
 
     public Parrot(){

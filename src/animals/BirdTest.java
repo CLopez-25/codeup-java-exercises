@@ -32,7 +32,7 @@ public class BirdTest {
 //            bird.makeNoise();
 //        }
 //
-////
+////        // How to get the parrot's echo back:
 //        Parrot backToParrot = (Parrot) birds[1];
 //        System.out.print(backToParrot.getName() + " says ");
 //        backToParrot.echo("I can echo again!");
@@ -40,6 +40,10 @@ public class BirdTest {
         Parrot parrot = new Parrot();
         parrot.setName("Polly");
         System.out.println(parrot.name);
+        System.out.println(Parrot.order);
+
+
+//                System.out.println(argumentativeOrnithologist("Psittaciformes", "Sphenisciformes"));
     }
 
 }

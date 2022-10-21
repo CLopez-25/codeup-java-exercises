@@ -15,6 +15,10 @@ public class Bird {
         System.out.println("caw caw");
     }
 
+    public final void fly(){
+        System.out.println("flap flap");
+    }
+
     // Polymorphic argument definition:
     public static void birdSounds(Bird[] birdsArray){
         for(Bird bird : birdsArray){
