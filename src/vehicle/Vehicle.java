@@ -16,5 +16,13 @@ public class Vehicle {
         return "vroom vroom";
     }
 
+    public void alarm(){
+        System.out.println("weeewuuu");
+    }
 
+    public Vehicle(){}
+
+    public Vehicle(String name){
+        this.name = name;
+    }
 }
