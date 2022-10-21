@@ -2,6 +2,11 @@ package com.codeup.java;
 
 public class Notes {
 }
+
+// public = can be accessed anywhere in the project
+// private =  can be accessed only in the class
+// default = can be accessed anywhere in the package
+
 // public class means we access this class from anywhere in our project
 // static means i dont have to create an object (dog)
 // void means it doesnt return anything

@@ -1,7 +1,7 @@
 package com.codeup.java.animals;
 
 public class Bird {
-    private String name;
+    protected String name;
 
     public String getName() {
         return name;
@@ -13,5 +13,16 @@ public class Bird {
 
     public void makeNoise(){
         System.out.println("caw caw");
+    }
+
+    // Polymorphic argument definition:
+    public static void birdSounds(Bird[] birdsArray){
+        for(Bird bird : birdsArray){
+            bird.makeNoise();
+        }
+    }
+
+    public Bird(){
+        System.out.println("A bird has been created");
     }
 }

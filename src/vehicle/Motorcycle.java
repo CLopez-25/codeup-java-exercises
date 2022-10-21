@@ -9,4 +9,11 @@ public class Motorcycle extends Vehicle {
         System.out.println(super.makeNoise());
         System.out.println("krrcckkklunnnnk");
     }
+
+    public Motorcycle(){}
+
+    public Motorcycle(String name){
+        this.setName(name);
+    }
+
 }
