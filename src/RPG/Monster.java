@@ -1,11 +1,19 @@
 package com.codeup.java.RPG;
 
 public class Monster {
+
+    private String name;
     private int armorClass;
     private int hitPoints;
     private int damage;
-    private String name;
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
     public int getArmorClass() {
         return armorClass;
     }
@@ -30,14 +38,6 @@ public class Monster {
         this.damage = damage;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String toString(){
         return name;
     }
@@ -51,4 +51,3 @@ public class Monster {
         this.name = name;
     }
 }
-

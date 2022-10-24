@@ -1,18 +1,39 @@
 package com.codeup.java.Shapes;
 
 public class Square extends Rectangle {
-    public Square(){}
 
-    public int getArea(){
-        return (int) Math.pow(getLength(), 2);
+    @Override
+    public double getPerimeter() {
+        return 4 * length;
     }
 
-    public int getPerimeter(){
-        return 4 * getLength();
+    @Override
+    public void setLength(double length) {
+        this.length = length;
+        this.width = length;
     }
 
-    public Square(int side){
-        super.setLength(side);
-        super.setWidth(side);
+    @Override
+    public void setWidth(double width) {
+        this.width = width;
+        this.length = width;
     }
+
+    public Square(double side){
+        super(side, side);
+    }
+//    public Square(){}
+//
+//    public int getArea(){
+//        return (int) Math.pow(getLength(), 2);
+//    }
+//
+//    public int getPerimeter(){
+//        return 4 * getLength();
+//    }
+//
+//    public Square(int side){
+//        super.setLength(side);
+//        super.setWidth(side);
+//    }
 }
