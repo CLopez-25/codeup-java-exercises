@@ -1,8 +1,6 @@
 package com.codeup.java;
-import com.codeup.java.RPG.Monster;
-import com.codeup.java.util.ArrayList;
 
-public class CollectionsLecture {
+public class ArrayListsLecture {
     public static void main(String[] args) {
 //        ArrayList<Monster> monsterArrayList = new ArrayList<>();
     }
