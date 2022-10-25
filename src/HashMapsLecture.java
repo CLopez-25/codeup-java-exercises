@@ -87,17 +87,17 @@ public class HashMapsLecture {
             System.out.printf("The %s has %d hit points, an armor class of %d, and does %d damage.%n", monster, monster.getHitPoints(), monster.getArmorClass(), monster.getDamage());
         });
 
-        // convert to a TreeMap to sort by key
+//         convert to a TreeMap to sort by key
         System.out.println("Output of forEach over the TreeMap");
         Map<String, Monster> monsterTreeMap = new TreeMap<>(monsterHashMap);
         monsterTreeMap.forEach((key, monster) -> {
             System.out.printf("The %s has %d hit points, an armor class of %d, and does %d damage.%n", monster, monster.getHitPoints(), monster.getArmorClass(), monster.getDamage());
         });
 
-        // Use the Collection toArray() method to convert a collection of
-        // HashMap values into an array of objects
-        // Each value in a HashMap is an object
-        // Using .values().toArray() we can create an array of objects
+//         Use the Collection toArray() method to convert a collection of
+//         HashMap values into an array of objects
+//         Each value in a HashMap is an object
+//         Using .values().toArray() we can create an array of objects
 
         Monster[] monstersArray2 = monsterHashMap.values().toArray(new Monster[0]);
         for (Monster monster : monstersArray2){
