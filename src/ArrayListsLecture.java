@@ -3,6 +3,7 @@ package com.codeup.java;
 import com.codeup.java.RPG.Monster;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ArrayListsLecture {
     public static void main(String[] args) {
@@ -21,7 +22,38 @@ public class ArrayListsLecture {
         Monster goblin = new Monster(15, 7, 5, "Goblin");
         Monster werewolf = new Monster(11, 58, 7, "Werewolf");
 
+        // Add objects to an arrayList one at a time with .add()
+        monsterArrayList.add(orc);
 
+        // Get the size of the arrayList using .size()
+        // Arrays use .length, arrayLists use .size()
+//        System.out.println(monsterArrayList.size());
+
+        // access the elements of the arrayList using .get() with the index
+//        System.out.println(monsterArrayList.get(0));
+
+        // ArrayLists have flexible size.  You can keep adding to them
+        // after they are created.  Unlike arrays, which have fixed size.
+        monsterArrayList.add(ogre);
+//        System.out.println(monsterArrayList.size());
+//        System.out.println(monsterArrayList.get(1).getArmorClass());
+//        System.out.println(monsterArrayList);
+
+        // How to add multiple objects to an arrayList all at once
+        ArrayList<Monster> newMonsterList = new ArrayList<>(List.of(goblin, blueDragon, frostGiant, werewolf));
+//        System.out.println(newMonsterList);
+//        System.out.println(newMonsterList.get(1));
+//        System.out.println(newMonsterList.get(1).getHitPoints());
+
+
+        // we can add all the elements of one arrayList into another arrayList
+        // using the .addAll method
+//        monsterArrayList.addAll(newMonsterList);
+
+
+        // If I want to add a bunch of stuff to an existing arrayList all at once
+        monsterArrayList.addAll(new ArrayList<>(List.of(goblin, blueDragon, frostGiant, werewolf)));
+//        System.out.println(monsterArrayList);
     }
 }
 
