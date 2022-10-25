@@ -3,6 +3,7 @@ package com.codeup.java;
 import com.codeup.java.RPG.Monster;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class ArrayListsLecture {
@@ -54,6 +55,35 @@ public class ArrayListsLecture {
         // If I want to add a bunch of stuff to an existing arrayList all at once
         monsterArrayList.addAll(new ArrayList<>(List.of(goblin, blueDragon, frostGiant, werewolf)));
 //        System.out.println(monsterArrayList);
+
+        // Loop over arrayLists
+        // traditional for loop
+        // Gives you access to the index
+//        for (int i = 0; i < monsterArrayList.size(); i++) {
+//            if (i == monsterArrayList.size() - 1) {
+//                System.out.printf("%s%n", monsterArrayList.get(i));
+//            } else {
+//                System.out.printf("%s, ", monsterArrayList.get(i));
+//            }
+//        }
+
+        // Enhanced for loop
+        // Simpler syntax but no access to the index
+//        for (Monster monster : monsterArrayList){
+//            System.out.println(monster.getHitPoints());
+//        }
+
+        // When creating an ArrayList of primitive data types, use the corresponding Object wrapper.  ArrayLists can only contain objects.
+        ArrayList<Integer> myNumbers = new ArrayList<>(List.of(1, 89, 34, -67, 98, 23));
+        System.out.println(myNumbers);
+
+        // We can use Collections.sort to sort arrayLists that contain numbers or strings
+        // They will be sorted in ascending "natural" order
+        Collections.sort(myNumbers);
+        System.out.println(myNumbers);
+        ArrayList<String> randomWords = new ArrayList<>(List.of("version", "suntan", "bond", "defeat", "later", "rate"));
+        System.out.println(randomWords);
+        Collections.sort(randomWords);
     }
 }
 
