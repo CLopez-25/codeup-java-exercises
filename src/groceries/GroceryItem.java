@@ -1,4 +1,4 @@
-package com.codeup.java.groceriesListApp;
+package com.codeup.java.groceries;
 
 public class GroceryItem {
 
@@ -30,5 +30,13 @@ public class GroceryItem {
         this.category = category;
     }
 
+    public GroceryItem() {
+    }
+
+    public GroceryItem(String name, int quantity, String category) {
+        this.name = name;
+        this.quantity = quantity;
+        this.category = category;
+    }
 
 }

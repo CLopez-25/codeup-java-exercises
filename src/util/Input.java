@@ -29,6 +29,12 @@ public class Input {
         return userInput.equalsIgnoreCase("y") || userInput.equalsIgnoreCase("yes");
     }
 
+    public boolean yesNo(String prompt){
+        System.out.println(prompt);
+        String userInput = scanner.nextLine();
+        return userInput.equalsIgnoreCase("y") || userInput.equalsIgnoreCase("yes");
+    }
+
     public int getInt(){
         System.out.println("Enter an integer:");
         return scanner.nextInt();
