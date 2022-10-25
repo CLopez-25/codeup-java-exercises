@@ -1,8 +1,27 @@
 package com.codeup.java;
 
+import com.codeup.java.RPG.Monster;
+
+import java.util.ArrayList;
+
 public class ArrayListsLecture {
     public static void main(String[] args) {
-//        ArrayList<Monster> monsterArrayList = new ArrayList<>();
+        // created empty array list
+        ArrayList<Monster> monsterArrayList = new ArrayList<>();
+
+        // Comparison to how we create plain arrays
+        Monster[] monstersArray = new Monster[5];
+
+
+        // Create monster objects
+        Monster orc = new Monster(13, 15, 9, "Orc");
+        Monster ogre = new Monster(11, 59, 13, "Ogre");
+        Monster blueDragon = new Monster(19, 225, 23, "Blue Dragon");
+        Monster frostGiant = new Monster(15, 138, 25, "Frost Giant");
+        Monster goblin = new Monster(15, 7, 5, "Goblin");
+        Monster werewolf = new Monster(11, 58, 7, "Werewolf");
+
+
     }
 }
 
