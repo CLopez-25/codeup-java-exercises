@@ -107,6 +107,6 @@ public class HashMapsLecture {
     } // end of main
 } // end of class
 
-// think abput objects in javascript
+// think about objects in javascript
 // data structure where a value is stored in a bucket referenced by a key in a string
 // K, V= key value
