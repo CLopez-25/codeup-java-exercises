@@ -4,6 +4,7 @@ import com.codeup.java.RPG.Monster;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class ArrayListsLecture {
@@ -84,6 +85,30 @@ public class ArrayListsLecture {
         ArrayList<String> randomWords = new ArrayList<>(List.of("version", "suntan", "bond", "defeat", "later", "rate"));
         System.out.println(randomWords);
         Collections.sort(randomWords);
+
+        // In addition, the List interface contains a default method called .sort(),
+        // So you can call .sort on any ArrayList.  It takes a comparator as its argument
+        // You can pass it Collections.reverseOrder() to sort an arraylist of strings
+        // or numbers in reverse order
+        randomWords.sort(Collections.reverseOrder());
+        System.out.println(randomWords);
+        System.out.println(monsterArrayList);
+
+        // If you want to compare custom objects rather than numbers or strings,
+        // A simple method is to call .sort() on the list and pass it
+        // Comparator.comparing(NameOfObject::getterForWhatYouWantToCompare)
+        // so to compare monsters by hit points, I use Monster::getHitPoints
+        monsterArrayList.sort(Comparator.comparing(Monster::getHitPoints));
+        System.out.println(monsterArrayList);
+
+        // If I want to sort custom objects by properties in reverse order, it's
+        // a little more complex.  One technique is to implement Comparator in the class
+        // and override the compare() method (see code in Monster class)
+
+        // To use the compare() method that we wrote in the Monster class, we use
+        // the sort method and pass it a no-arg constructor
+        monsterArrayList.sort(new Monster());
+        System.out.println(monsterArrayList);
     }
 }
 
