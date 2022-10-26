@@ -2,14 +2,11 @@ package com.codeup.java.util;
 import java.util.Scanner;
 
 public class Input {
-    private Scanner scanner;
 
-    public Scanner getScanner() {
-        return scanner;
-    }
+    private final Scanner scanner;
 
-    public void setScanner(Scanner scanner) {
-        this.scanner = scanner;
+    public Input() {
+        this.scanner = new Scanner(System.in);
     }
 
     public String getString(){
@@ -29,15 +26,28 @@ public class Input {
         return userInput.equalsIgnoreCase("y") || userInput.equalsIgnoreCase("yes");
     }
 
-    public boolean yesNo(String prompt){
+     public boolean yesNo(String prompt){
         System.out.println(prompt);
         String userInput = scanner.nextLine();
         return userInput.equalsIgnoreCase("y") || userInput.equalsIgnoreCase("yes");
     }
 
+    /*
+        TODO: refactor this method to use Integer.valueOf(getString()) and surround it with a try-catch block to
+         to catch the NumberFormatException. If the exception is caught, call the getInt() method again.
+     */
+//    public int getInt(){
+//        System.out.println("Enter an integer:");
+//        return scanner.nextInt();
+//    }
+
     public int getInt(){
-        System.out.println("Enter an integer:");
-        return scanner.nextInt();
+        try {
+            return Integer.parseInt(getString());
+        } catch (NumberFormatException e) {
+            System.err.println("Invalid input, try again.");
+            return getInt();
+        }
     }
 
     public int getInt(String prompt){
@@ -48,7 +58,7 @@ public class Input {
     public int getInt(int min, int max){
         String prompt = "Enter an integer between " + min + " and " + max + ":";
         System.out.println(prompt);
-        int userInput = scanner.nextInt();
+        int userInput = getInt();
         while (userInput < min || userInput > max){
             System.out.println(prompt);
             userInput = scanner.nextInt();
@@ -56,6 +66,10 @@ public class Input {
         return userInput;
     }
 
+    /*
+        TODO: refactor this method to use Double.valueOf(getString()) and surround it with a try-catch block to
+         to catch the NumberFormatException. If the exception is caught, call the getDouble() method again.
+     */
     public double getDouble(){
         System.out.println("Enter an number:");
         return scanner.nextDouble();
@@ -69,15 +83,11 @@ public class Input {
     public double getDouble(double min, double max){
         String prompt = "Enter an number between " + min + " and " + max + ":";
         System.out.println(prompt);
-        double userInput = scanner.nextDouble();
+        double userInput = getDouble();
         while (userInput < min || userInput > max){
             System.out.println(prompt);
             userInput = scanner.nextDouble();
         }
         return userInput;
-    }
-
-    public Input(){
-        scanner = new Scanner(System.in);
     }
 }
