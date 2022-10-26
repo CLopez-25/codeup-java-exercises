@@ -48,3 +48,5 @@ public class Notes {
 
 // if you create a method in your class you can have it return whatever you want instead of the hash code reference (i.e. monster/monstertest)
 
+// ../ will only go up directories
+
