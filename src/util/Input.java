@@ -41,11 +41,16 @@ public class Input {
 //        return scanner.nextInt();
 //    }
 
+    // get the user input as a string
+    // parse the string into a number
+    // if the parse input throws an exception, recurse
+    // if no exception return the parsed number:
+
     public int getInt(){
         try {
             return Integer.parseInt(getString());
         } catch (NumberFormatException e) {
-            System.err.println("Invalid input, try again.");
+            System.err.println("Invalid input, enter a number.");
             return getInt();
         }
     }
@@ -70,9 +75,18 @@ public class Input {
         TODO: refactor this method to use Double.valueOf(getString()) and surround it with a try-catch block to
          to catch the NumberFormatException. If the exception is caught, call the getDouble() method again.
      */
-    public double getDouble(){
-        System.out.println("Enter an number:");
-        return scanner.nextDouble();
+//    public double getDouble(){
+//        System.out.println("Enter an number:");
+//        return scanner.nextDouble();
+//    }
+
+    public double getDouble() {
+        try {
+            return Double.parseDouble(getString());
+        } catch (NumberFormatException e) {
+            System.err.println("Invalid input, enter a number.");
+            return getDouble();
+        }
     }
 
     public double getDouble(String prompt){
