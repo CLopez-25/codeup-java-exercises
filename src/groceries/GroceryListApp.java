@@ -84,3 +84,6 @@ public class GroceryListApp {
         } // end of if(userChoice)
     } // end of main method
 } // end of groceryList app
+
+
+// INTELLIJ WAS TELLING YOU THAT ARRAY WAS MISSPELLED, JAVIER!
