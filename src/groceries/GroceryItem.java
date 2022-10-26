@@ -4,7 +4,7 @@ public class GroceryItem {
 
     private String name;
 
-//    used String quantity so that the user can enter "one gallon, one pound", etc.
+//    used String quantity so that the user can enter "one gallon, one lb", etc. and made sure to add String in the appropriate places below:
     private String quantity;
     private String category;
 
