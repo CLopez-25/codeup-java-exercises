@@ -3,7 +3,9 @@ package com.codeup.java.groceries;
 public class GroceryItem {
 
     private String name;
-    private int quantity;
+
+//    used String quantity so that the user can enter "one gallon, one pound", etc.
+    private String quantity;
     private String category;
 
     public String getName() {
@@ -14,11 +16,11 @@ public class GroceryItem {
         this.name = name;
     }
 
-    public int getQuantity() {
+    public String getQuantity() {
         return quantity;
     }
 
-    public void setQuantity(int quantity) {
+    public void setQuantity(String quantity) {
         this.quantity = quantity;
     }
 
@@ -33,7 +35,7 @@ public class GroceryItem {
     public GroceryItem() {
     }
 
-    public GroceryItem(String name, int quantity, String category) {
+    public GroceryItem(String name, String quantity, String category) {
         this.name = name;
         this.quantity = quantity;
         this.category = category;
