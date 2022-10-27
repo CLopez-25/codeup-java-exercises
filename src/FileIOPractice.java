@@ -40,28 +40,20 @@ public class FileIOPractice {
 
     public static void main(String[] args) {
 
-        // greet names
-//        greetNames();
-//        System.out.println("==================");
+//         greet names
+        greetNames();
+        System.out.println("==================");
 
-        // write to file and replace names...
-//        List<String> newNames = Arrays.asList("Cody", "Nikki", "Jordy", "Jay");
-//        writeLines(newNames);
-//        greetNames();
+//         write to file and replace names...
+        List<String> newNames = Arrays.asList("Cody", "Nikki", "Jordy", "Jay");
+        writeLines(newNames);
+        greetNames();
 
-        // delete name from list...
+//         delete name from list...
         deleteName("Jordy");
         greetNames();
 
     }
-
-
-
-
-
-
-
-
 
 
 
