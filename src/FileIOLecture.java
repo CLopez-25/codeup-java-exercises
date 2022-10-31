@@ -112,10 +112,10 @@ public class FileIOLecture {
             e.printStackTrace();
         }
 //
-//        List<String> names = new ArrayList<>();
-//        names.add("Tim");
-//        names.add("Sally");
-//        names.add("Mary");
+        List<String> names = new ArrayList<>();
+        names.add("Tim");
+        names.add("Sally");
+        names.add("Mary");
 //
 //        try {
 //            Files.write(p, names, StandardOpenOption.APPEND);
