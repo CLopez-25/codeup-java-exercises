@@ -1,4 +1,4 @@
-package com.codeup.java.Shapes;
+package com.codeup.java.shapes;
 import com.codeup.java.util.Input;
 
 

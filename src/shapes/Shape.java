@@ -1,4 +1,4 @@
-package com.codeup.java.Shapes;
+package com.codeup.java.shapes;
 
 public abstract class Shape {
 

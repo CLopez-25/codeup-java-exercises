@@ -1,4 +1,4 @@
-package com.codeup.java.Shapes;
+package com.codeup.java.shapes;
 
 public class Rectangle extends Quadrilateral implements Measurable{
 
