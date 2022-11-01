@@ -1,3 +1,5 @@
+package com.codeup.java;
+
 public class Employee {
 
     public String name;

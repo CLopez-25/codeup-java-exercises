@@ -1,3 +1,5 @@
+package com.codeup.java;
+
 public class EmployeeTest {
     public static void main(String[] args) {
         // reference variables: objects:
