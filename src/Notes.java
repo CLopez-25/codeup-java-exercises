@@ -50,3 +50,22 @@ public class Notes {
 
 // ../ will only go up directories
 
+// for contacts project
+
+//public class DecimalFormatTest {
+//    public static void main(String[] args) {
+//        String format = "(###) ###-####";
+//        long number = 1234567890;
+//        try {
+//            MaskFormatter maskFormatter = new MaskFormatter(format);
+//            maskFormatter.setValueContainsLiteralCharacters(false);
+//            String formattedPhoneNumber = (maskFormatter.valueToString(number));
+//            System.out.println(formattedPhoneNumber);
+//        } catch (ParseException pex){
+//            System.out.println("Parse exception");
+//            pex.printStackTrace();
+//        }
+//
+//    }
+//}
+
