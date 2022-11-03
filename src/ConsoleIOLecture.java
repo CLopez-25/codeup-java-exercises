@@ -1,4 +1,4 @@
-//import java.util.Scanner;
+package com.codeup.java;//import java.util.Scanner;
 
 import java.util.Scanner;
 

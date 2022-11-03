@@ -1,3 +1,5 @@
+package com.codeup.java;
+
 public class syntaxLecture {
     public static void main(String[] args) {
         // Declare a variable without initializing
